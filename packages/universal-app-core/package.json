@@ -1,7 +1,7 @@
 {
   "name": "universal-app-core",
   "description": "The core module for the universal application",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Brandon Konkle <brandon@ecliptic.io>",
   "productName": "UniversalApp",
   "main": "src/Main.js",
