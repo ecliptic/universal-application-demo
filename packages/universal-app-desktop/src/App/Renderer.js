@@ -1,26 +1,26 @@
 import {render} from 'react-dom'
 import * as Store from './Store'
-import Index from '../Components/Index'
 import React from 'react'
+import {Components} from 'universal-app-web'
 
 /**
  * Initialize the application.
  */
 function main () {
   const store = Store.createRendererStore()
-  const app = mount(Index, store)
+  const app = mount(Components.Index, store)
 
   if (module.hot) {
     const triggerReload = () => {
       // Hot reload components and reducers.
       const NextStore = require('./Store')
-      const NextIndex = require('../Components/Index').default
+      const NextComponents = require('universal-app-web').Components
       const nextStore = NextStore.createRendererStore()
 
-      return mount(NextIndex, nextStore)
+      return mount(NextComponents.Index, nextStore)
     }
     module.hot.accept('./Store', triggerReload)
-    module.hot.accept('../Components/Index', triggerReload)
+    module.hot.accept('universal-app-web', triggerReload)
   }
 
   return app

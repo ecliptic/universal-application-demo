@@ -10,11 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/ecliptic/mnstr.git"
   },
-  "main": "src/Main.js",
+  "main": "src/Exports.js",
   "dependencies": {
     "dotenv": "^4.0.0",
     "react": "15.4.2",
-    "react-redux": "^5.0.3"
+    "react-redux": "^5.0.3",
+    "styled-components": "^1.4.4"
   },
   "devDependencies": {
     "@webpack-blocks/babel6": "^0.4.1",

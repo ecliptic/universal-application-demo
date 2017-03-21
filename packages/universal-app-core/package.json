@@ -4,7 +4,7 @@
   "version": "0.1.1",
   "author": "Brandon Konkle <brandon@ecliptic.io>",
   "productName": "UniversalApp",
-  "main": "src/Main.js",
+  "main": "src/Exports.js",
   "scripts": {
     "test": "jest",
     "test-watch": "jest --watch"
