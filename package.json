@@ -1,0 +1,50 @@
+{
+  "name": "universal-app",
+  "version": "0.1.0",
+  "description": "A universal application structure built on React",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean",
+    "publish": "lerna publish --skip-npm && git push --tags",
+    "web": "cd packages/universal-app-web && npm run dev",
+    "desktop": "concurrently \"npm run desktop:watch\" \"npm run desktop:dev\"",
+    "desktop:dev": "cd packages/universal-app-desktop && wait-on http://localhost:3000 && npm run dev",
+    "desktop:watch": "cd packages/universal-app-desktop && npm run hot-server",
+    "mobile:watch": "cd packages/universal-app-mobile && npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bkonkle/universal-application-demo.git"
+  },
+  "author": "Brandon Konkle <brandon@ecliptic.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bkonkle/universal-application-demo/issues"
+  },
+  "homepage": "https://github.com/bkonkle/universal-application-demo#readme",
+  "devDependencies": {
+    "babel-eslint": "^7.2.0",
+    "babel-plugin-transform-async-to-generator": "^6.22.0",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-react-optimize": "^1.0.1",
+    "eslint": "^3.18.0",
+    "eslint-config-standard": "^7.1.0",
+    "eslint-config-standard-react": "^4.3.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^6.10.3",
+    "eslint-plugin-standard": "^2.1.1",
+    "lerna": "^2.0.0-beta.38",
+    "react": "15.4.2",
+    "react-dom": "15.4.2",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "wait-on": "^2.0.2"
+  },
+  "dependencies": {
+    "concurrently": "^3.4.0"
+  }
+}

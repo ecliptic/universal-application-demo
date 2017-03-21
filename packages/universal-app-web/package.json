@@ -1,0 +1,35 @@
+{
+  "name": "universal-app-web",
+  "description": "The universal web client",
+  "version": "0.1.0",
+  "author": "Brandon Konkle <brandon@ecliptic.io>",
+  "scripts": {
+    "dev": "NODE_ENV=development webpack-dev-server --config webpack.config.babel.js --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bkonkle/universal-application-demo.git"
+  },
+  "main": "src/Main.js",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "react": "15.4.2",
+    "react-redux": "^5.0.3"
+  },
+  "devDependencies": {
+    "@webpack-blocks/babel6": "^0.4.1",
+    "@webpack-blocks/dev-server2": "^0.4.0",
+    "@webpack-blocks/webpack2": "^0.4.0",
+    "babel-polyfill": "^6.23.0",
+    "universal-app-core": "0.1.0",
+    "webpack": "^2.2.1",
+    "webpack-blocks-html": "^1.3.1",
+    "webpack-blocks-purescript": "^1.1.2",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecliptic/mnstr.git"
+  }
+}

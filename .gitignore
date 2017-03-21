@@ -14,24 +14,27 @@ lib-cov
 # Coverage directory used by tools like istanbul
 coverage
 
-# nyc test coverage
-.nyc_output
-
-# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
-
 # node-waf configuration
 .lock-wscript
 
-# Compiled binary addons (http://nodejs.org/api/addons.html)
-build/Release
+# Builds
+build
+output
+public
+release
 
 # Dependency directories
 node_modules
-jspm_packages
+.psci_modules
+.psc-package
 
-# Optional npm cache directory
+# Cache directories
+.pulp-cache
+.psc-ide-port
 .npm
 
-# Optional REPL history
-.node_repl_history
+# Git conflicts
+*.orig
+
+# Local environment variables
+.env
