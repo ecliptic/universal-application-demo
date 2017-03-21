@@ -1,3 +1,5 @@
-# universal-application-demo
+# Universal Application Demo
 
-Universal Application Structure
+This is a demo of a universal application structure using React, React Native, and Electron.
+
+A better README is forthcoming...
